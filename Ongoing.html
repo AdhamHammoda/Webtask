@@ -4,77 +4,106 @@
   <title>Movies</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style1.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
 </head>
 <body>
-
-  <div class="flex-container">
-    <a href="#" class="btn btn-link" style="margin-bottom:4px;white-space: normal;">Action Movies</a>
-    <a href="#" class="btn btn-link" style="margin-bottom:4px;white-space: normal;">Comdey Movies</a>
-    <a href="#" class="btn btn-link" style="margin-bottom:4px;white-space: normal;">Romantic Movies</a>
-    <a href="#" class="btn btn-link" style="margin-bottom:4px;white-space: normal;">Horror Movies</a>
-    <a href="#" class="btn btn-link" style="margin-bottom:4px;white-space: normal;">Action Movies</a>
-    <a href="#" class="btn btn-link " style="margin-bottom:4px;white-space: normal;">Mystery Movies</a>    
-  </div>
-
-<div class="container-fluid"  style="overflow: auto;">
-  <div class="row"> 
-    <h1 align="center">Movies</h1>  
-  </div>
-  <div class="row">
-    <div class="col-xs-2" align="center"><span>Name</span>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Genres</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Action Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comedy Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Horror Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Romantic Movies</a>
+          </li>
+          
+        </ul>
+      </div>
     </div>
-    <div class="col-xs-5" align="center"><span>Trailer</span></div>
-    <div class="col-xs-4" align="center"><span>Poster</span></div>
-    <div class="col-xs-1" align="center"><span>Release Date</span></div>  
-  </div>
-  <div class="w-100"></div>
-  <div class="row">
-    <div class="col-xs-2" align="center">
+  </nav>
+
+  
+
+<br><br><br>
+<h1 align="center" style="padding: 5px">Movies</h1>  
+<br><br>
+
+<div class="container-fluid">
+  <div class="row my-4 my-md-2">
+    <div class="col-12 col-md-2" align="center">
+      <p align="center">Name</p>
       <a href="https://www.imdb.com/title/tt0050083/" class="btn btn-info" style="margin-bottom:4px;white-space: normal;" target="_blank">12 Angry men</a>
     </div>
-    <div class="col-xs-6">
+    <div class="col-12  col-md-5">
+      <p align="center">Trailer</p>
       <div class="video">
         <iframe width="500" height="360" src="https://www.youtube.com/embed/TEN-2uTi2c0" title="12 ANGRY MEN (1957) | Official Trailer | MGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
-    <div class="col-xs-3">
+
+    <div class="col-12 col-md-4">
+      <p align="center">Poster</p>
         <img src="https://www.themoviedb.org/t/p/original/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg" class="rounded" alt="Cinque Terre" height="500" width="500">
     </div>
-    <div class="col-xs-1">April 1957</div>
+    <div class="col-12 col-md-1">
+    <p align="center">Release Date</p>
+      <p align="center">April 1957</p>
+    </div>
   </div>
-  <div class="row">
-      <div class="col-xs-2" align="center">
-        <a href="https://www.imdb.com/title/tt0816692/" class="btn btn-info" style="margin-bottom:4px;white-space: normal;" target="_blank">Inter stellar</a>
+
+  <div class="row my-4 my-md-2">
+      <div class="col-12 col-md-2" align="center">
+        <p align="center">Name</p>
+        <a href="https://www.imdb.com/title/tt0816692/" class="btn btn-info" style="margin-bottom:4px;white-space: normal;" target="_blank">Interstellar</a>
       </div>
-      <div class="col-xs-6">
+      <div class="col-12 col-md-5">
+        <p align="center">Trailer</p>
         <div class="video">
           <iframe width="500" height="360" src="https://www.youtube.com/embed/zSWdZVtXT7E" title="Interstellar - Trailer - Official Warner Bros. UK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="col-xs-3">
+      <div class="col-12 col-md-4">
+          <p align="center">Poster</p>
           <img src="https://www.themoviedb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" class="rounded" alt="Cinque Terre" height="500" width="500">
       </div>
-      <div class="col-xs-1">November 2014</div>
-  </div>
-  <div class="row">
-      <div class="col-xs-2" align="center">
-        <a href="https://www.imdb.com/title/tt15398776/" class="btn btn-info" style="margin-bottom:4px;white-space: normal;" target="_blank">Oppen heimer</a>
+      <div class="col-12 col-md-1">
+        <p align="center">Release Date</p>
+        <p align="center">November 2014 </p>
       </div>
-      <div class="col-xs-6">
+  </div>
+  <div class="row my-4 my-md-2">
+      <div class="col-12 col-md-2" align="center">
+        <p>Name</p>
+        <a href="https://www.imdb.com/title/tt15398776/" class="btn btn-info" style="margin-bottom:4px;white-space: normal;" target="_blank">Oppenheimer</a>
+      </div>
+      <div class="col-12 col-md-5">
+        <p align="center">Trailer</p>
         <div class="video">
           <iframe width="500" height="360" src="https://www.youtube.com/embed/uYPbbksJxIg" title="Oppenheimer | New Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="col-xs-3">
+      <div class="col-12 col-md-4">
+          <p align="center">Poster</p>
           <img src="https://movies.universalpictures.com/media/opr-tsr1sheet3-look2-rgb-3-1-1-64545c0d15f1e-1.jpg" class="rounded" alt="Cinque Terre" height="500" width="500">
       </div>
-      <div class="col-xs-1">July 2023</div>
-  </div>
+      <div class="col-12 col-md-1">
+        <p align="center">Release Date</p>
+        <p align="center">July 2023</p>
+      </div>
+  </div> 
 </div>
-
 </body>
 </html>
